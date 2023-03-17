@@ -22,5 +22,7 @@ pip install "git+https://github.com/BuddyVolly/eSBAE"
 
 deactivate # (optional) exit from environment.
 
+cd
+mkdir -p $project
 cd $project
 wget "https://raw.githubusercontent.com/BuddyVolly/pre_esbae_notebooks/main/time_series_testing.ipynb"
