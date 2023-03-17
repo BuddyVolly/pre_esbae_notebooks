@@ -14,10 +14,10 @@ source "$folder_name/bin/activate" # Activate the virtual enviroment just create
 pip install ipykernel # Install ipykernel in our venv.
 python -m ipykernel install --user --name="$folder_name" --display-name="(venv) - pre_esbae" 
 
-pip install git+https://github.com/openforis/earthengine-api.git@v0.1.343#egg=earthengine-api&subdirectory=python
-pip install git+https://github.com/BuddyVolly/eSBAE
+pip install "git+https://github.com/openforis/earthengine-api.git@v0.1.343#egg=earthengine-api&subdirectory=python"
+pip install "git+https://github.com/BuddyVolly/eSBAE"
 
 deactivate # (optional) exit from environment.
 
 cd $project
-git clone https://github.com/BuddyVolly/pre_eSBAE_notebooks
+wget "https://raw.githubusercontent.com/BuddyVolly/pre_esbae_notebooks/main/time_series_testing.ipynb"
